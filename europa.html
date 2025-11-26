@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Europa – Mapa fizyczna</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <button onclick="location.href='europa.html'">Europa</button>
+    <button onclick="location.href='azja.html'">Azja</button>
+    <button onclick="location.href='afryka.html'">Afryka</button>
+  </nav>
+
+  <div id="historyBox"></div>
+
+  <div class="card" role="main">
+    <h1>🌍 Europa — Mapa fizyczna</h1>
+    <div class="controls">
+      <button id="drawBtn">Losuj</button>
+      <button id="submitBtn" class="submit">Zatwierdź</button>
+      <button id="resetBtn">🔁 Resetuj pamięć</button>
+
+    </div>
+
+    <div class="grid" id="results"></div>
+    <p class="note"><small>Kliknij checkboxy przy każdym punkcie, aby je oznaczyć. Zatwierdź, aby zapisać wynik.</small></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

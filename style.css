@@ -1,0 +1,131 @@
+/* Ogólny wygląd strony */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+/* Pasek nawigacji */
+nav {
+  background: #004aad;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  margin: 0 15px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 6px;
+}
+
+nav button:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+nav button.active {
+  background: #0076ff;
+}
+
+/* Główna zawartość */
+.card {
+  background: white;
+  max-width: 900px;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #0076ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #005bcc;
+}
+
+button.submit {
+  background: #00a86b;
+}
+
+button.submit:hover {
+  background: #008f5b;
+}
+
+/* Układ list */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.box {
+  background: #f9fbff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+  margin-top: 0;
+  color: #004aad;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* Historia */
+#historyBox {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+  max-width: 250px;
+}
+
+.note {
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
